@@ -11,7 +11,7 @@ import { InlinePrompt } from '@/components/home/inline-prompt'
 
 Streaming conversational text UIs (like ChatGPT) have gained massive popularity over the past few months. This section will explore the benefits and drawbacks of streaming and blocking interfaces and how to implement them using the Vercel AI SDK.
 
-Large Language Models (LLMs) are extremely powerful. However, when generating long outputs, they can be very slow compared to the latency you're likely used to. If you try to build a traditional blocking UI, your users might easily find themselves staring at loading spinners for 5, 10, even up to 40s waiting for the entire LLM response to be generated. This can lead to a poor user experience, especially in conversational applications like chatbots. Streaming UIs can help mitigate this issue by displaying parts of the response as they become available.
+Large Language Models (LLMs) are extremely powerful. However, when generating long outputs, they can be very slow compared to the latency you're likely used to. If you try to build a traditional blocking UI, your users might easily find themselves staring at loading spinners for 5, 10, even up to 40s waiting for the entire LLM response to be generated. This can lead to a poor user experience, especially in conversational applications like chatbots. Streaming UIs can help mitigate this issue by progressively displaying parts of the response as they become available.
 
 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-8">
   <Card
